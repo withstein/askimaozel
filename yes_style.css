@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/029/461/394/non_2x/seamless-pattern-with-cute-tomato-fruits-in-kawaii-stele-funny-vegetable-in-cartoon-style-for-packaging-and-web-design-vector.jpg');
+}
+
+.header_text {
+    font-family: 'Trebuchet MS';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

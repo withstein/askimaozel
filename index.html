@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class="header_text" style="color: #4886a2;">ben seni cok seviyorum</h1>
+                <h1 class="header_text" style="color: #4886a2;">benimle bulusur musun, hemen?</h1><br><br>
+            </div>
+            <div class="gif_container">
+                <img src="https://i.pinimg.com/originals/42/61/ec/4261ec8b20a4ec6f9cf047250024371f.gif" alt="aaaa">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Evet</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Hayır</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
